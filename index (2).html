@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HexaSoft | Software Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+body{
+background:#0b1220;
+color:#fff;
+overflow-x:hidden;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:sticky;
+top:0;
+background:rgba(11,18,32,.8);
+backdrop-filter:blur(10px);
+border-bottom:1px solid #1e293b;
+}
+
+.logo{font-weight:800;font-size:20px;letter-spacing:1px}
+
+nav a{
+color:#cbd5e1;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{color:#38bdf8}
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+gap:40px;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.1;
+}
+
+.hero h1 span{color:#3b82f6}
+
+.hero p{color:#94a3b8;margin:20px 0}
+
+.btn{
+padding:14px 26px;
+border-radius:12px;
+text-decoration:none;
+display:inline-block;
+margin-right:10px;
+transition:.3s;
+font-weight:600;
+}
+
+.primary{
+background:#3b82f6;
+color:white;
+}
+
+.primary:hover{transform:scale(1.05)}
+
+.secondary{
+border:1px solid #334155;
+color:white;
+}
+
+.secondary:hover{background:#111827}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.card{
+background:#111827;
+padding:20px;
+border-radius:16px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(59,130,246,.2);
+}
+
+.section{
+padding:80px 8%;
+}
+
+.title{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.service{
+background:#111827;
+padding:25px;
+border-radius:18px;
+transition:.3s;
+}
+
+.service:hover{
+transform:translateY(-6px);
+background:#0f172a;
+border:1px solid #1e293b;
+}
+
+.contact input,.contact textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border-radius:12px;
+border:none;
+background:#111827;
+color:white;
+}
+
+.contact button{
+background:#3b82f6;
+border:none;
+padding:14px 26px;
+color:white;
+border-radius:12px;
+cursor:pointer;
+font-weight:600;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#64748b;
+border-top:1px solid #1e293b;
+}
+
+@media(max-width:900px){
+.hero{flex-direction:column}
+.hero h1{font-size:40px}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">HexaSoft</div>
+<nav>
+<a href="#services">Hizmetler</a>
+<a href="#about">Hakkımızda</a>
+<a href="#contact">İletişim</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Geleceği <span>Kodlayan</span> Dijital Ajans</h1>
+<p>Modern web siteleri, özel yazılımlar ve işletmeler için büyüme sistemleri geliştiriyoruz.</p>
+
+
+
+<a href="#contact" class="btn primary">Teklif Al</a>
+<a href="#services" class="btn secondary">Hizmetler</a>
+</div>
+
+<div class="grid">
+<div class="card">⚡ Hızlı Teslim</div>
+<div class="card">📱 Mobil Uyum</div>
+<div class="card">🔍 SEO Optimizasyon</div>
+<div class="card">🔒 Güvenli Sistem</div>
+<a class="wa" href="https://wa.me/905451351262?text=Merhaba%20HexaSoft,%20web%20sitesinden%20ulaşıyorum." target="_blank">WhatsApp</a>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2 class="title">Hizmetlerimiz</h2>
+
+
+<div class="services">
+<div class="service">Kurumsal Web Sitesi</div>
+<div class="service">E-Ticaret Sistemleri</div>
+<div class="service">Özel Yazılım Geliştirme</div>
+<div class="service">UI/UX Tasarım</div>
+<div class="service">SEO & Dijital Büyüme</div>
+<div class="service">Bakım & Destek</div>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2 class="title">HexaSoft Kimdir?</h2>
+<p style="color:#94a3b8;max-width:700px">
+HexaSoft, modern teknolojiler ile işletmelerin dijital dünyada büyümesini sağlayan genç ve dinamik bir yazılım ajansıdır.
+</p>
+</section>
+
+<section class="section contact" id="contact">
+<h2 class="title">İletişim</h2>
+
+<input type="text" placeholder="Adınız">
+<input type="email" placeholder="E-posta">
+<textarea rows="5" placeholder="Mesajınız"></textarea>
+
+<button>Gönder</button>
+</section>
+
+<footer>
+© 2026 HexaSoft Software Agency
+</footer>
+
+</body>
+</html>
+
